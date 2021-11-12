@@ -11,7 +11,7 @@ const MyOneOrder = (props) => {
     const deleteMyOrder = id => {
         const proceed = window.confirm('are you want to delete ?')
         if (proceed) {
-            fetch(`http://localhost:5000/deleteMyOrder/${id}`, {
+            fetch(`https://salty-everglades-52224.herokuapp.com/deleteMyOrder/${id}`, {
             method: "DELETE",
             headers: { "Content-type": "application/json" },
             

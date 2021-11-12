@@ -10,7 +10,7 @@ const Review = () => {
 
     const onSubmit = data => {
         
-        fetch('http://localhost:5000/userRating', {
+        fetch('https://salty-everglades-52224.herokuapp.com/userRating', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

@@ -10,7 +10,7 @@ const MyOrder = () => {
     const { user } = UseAuth();
 
     useEffect(() => {
-        fetch('http://localhost:5000/allOrder')
+        fetch('https://salty-everglades-52224.herokuapp.com/allOrder')
             .then(res => res.json())
             .then(data => setMyOrder(data?.filter(order => order.name === user.displayName)))
     }, [myOrder]);

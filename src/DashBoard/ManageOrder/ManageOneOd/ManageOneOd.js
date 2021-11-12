@@ -6,7 +6,7 @@ const ManageOneOd = (props) => {
 
     const handleApproved = (id) => {
 
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(`https://salty-everglades-52224.herokuapp.com/updateStatus/${id}`, {
             method:"PUT"
         })
             .then(res => res.json())
@@ -20,7 +20,7 @@ const ManageOneOd = (props) => {
     const handleDeleteOrder = id => {
         const proceed = window.confirm('you want to delete?')
         if (proceed) {
-            fetch(`http://localhost:5000/deleteOrder/${id}`, {
+            fetch(`https://salty-everglades-52224.herokuapp.com/deleteOrder/${id}`, {
             method: "DELETE"
             })
             .then(res => res.json())

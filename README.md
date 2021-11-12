@@ -1,6 +1,6 @@
 # `GunBroker` A MERN stack project
 
-Live site Link [GunBroker](https://github.com/facebook/create-react-app).
+Live site Link [GunBroker](https://gun-broker.web.app/)
 
 ## About this project
 

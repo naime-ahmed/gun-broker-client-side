@@ -16,14 +16,14 @@ const PlaceOrder = () => {
     const history = useHistory();
     const { orderItemId } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/placeOrder/${orderItemId}`)
+        fetch(`https://salty-everglades-52224.herokuapp.com/placeOrder/${orderItemId}`)
             .then(res => res.json())
             .then(data => setOrderItem(data));
     }, [orderItemId]);
 
     const onSubmit = (data) => {
         data.status = "pending";
-        fetch('http://localhost:5000/allOrder', {
+        fetch('https://salty-everglades-52224.herokuapp.com/allOrder', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

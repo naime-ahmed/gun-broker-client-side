@@ -7,7 +7,7 @@ const ManageProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allProduct')
+        fetch('https://salty-everglades-52224.herokuapp.com/allProduct')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products]);

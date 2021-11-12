@@ -7,7 +7,7 @@ const TopServices = () => {
     const [topProducts, setTopProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/topProduct')
+        fetch('https://salty-everglades-52224.herokuapp.com/topProduct')
             .then(res => res.json())
             .then(data => setTopProducts(data));
     }, [])

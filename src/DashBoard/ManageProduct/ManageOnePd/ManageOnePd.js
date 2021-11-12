@@ -8,7 +8,7 @@ const ManageOnePd = (props) => {
 
         const proceed = window.confirm('are you want to delete ?')
         if (proceed) {
-            fetch(`http://localhost:5000/deleteProduct/${id}`, {
+            fetch(`https://salty-everglades-52224.herokuapp.com/deleteProduct/${id}`, {
             method: 'DELETE',
             headers: { "Content-type": "application/json" },
             })

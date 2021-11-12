@@ -87,14 +87,14 @@ const UseFirebase = () => {
     }, [])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user?.email}`)
+        fetch(`https://salty-everglades-52224.herokuapp.com/users/${user?.email}`)
             .then(res => res.json())
         .then(data=> setAdmin(data.admin))
     },[user.email])
     
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/addUser', {
+        fetch('https://salty-everglades-52224.herokuapp.com/addUser', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
