@@ -1,0 +1,44 @@
+.powerful-gun {
+    margin: 0 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    place-items: center;
+    justify-content: center;
+}
+.powerful-gun-header {
+    text-align: center;
+    margin-top: 80px;
+}
+.powerful-gun-header span{
+    color: rgb(226, 6, 6);
+}
+.powerful-gun-img img{
+    width: 100%;
+}
+.powerful-gun-text p{
+    text-align: justify;
+}
+
+/* responsive style  */
+
+@media only screen and (max-width: 800px) {
+    .top-banner-text h1 {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .powerful-gun{
+        grid-template-columns: 1fr;
+        
+    }
+    .powerful-gun-text h1 {
+        margin-top: 15px;
+    }
+    .powerful-gun-header{
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+}

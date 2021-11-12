@@ -1,0 +1,36 @@
+.review-section {
+    margin: 80px 6%;
+}
+.review-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.review-header h1{
+    color: rgb(247, 62, 62);
+}
+.all-review {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+}
+
+/* responsive style  */
+@media only screen and (max-width: 750px) {
+    .all-review{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .review-section{
+        margin: 50px 4%;
+    }
+    .all-review{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .review-header h1{
+        font-size: 30px;
+    }
+}

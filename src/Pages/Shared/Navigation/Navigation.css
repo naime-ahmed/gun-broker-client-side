@@ -1,0 +1,109 @@
+.nav-style{
+    display: flex;
+    height: 80px;
+    max-width:100%;
+    background: #101111;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    position: static;
+}
+.logo img{
+    max-width: 145px;
+    cursor: pointer;
+  }
+.nav-style ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.nav-style ul li{
+  color: #fff;
+}
+.nav-style ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.signOut-btn {
+    border: none;
+    outline: none;
+    padding: 5px 13px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(80, 12, 46);
+    font-size: 16px;
+    cursor: pointer;
+  
+}
+
+.nav-style .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+@media (max-width: 1000px){
+    .nav-style{
+      padding: 0 20px 0 50px;
+    }
+}
+@media (max-width: 670px) {
+    .nav-style .menu-btn i{
+      display: block;
+      color: rgb(255, 251, 251);
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    .nav-style ul{
+      position: fixed;
+      top: 63px;
+      left: -110%;
+      background: rgb(11, 11, 34);
+      height: 630px;
+      min-width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: -40px;
+    }
+    .nav-style ul li{
+      width: 100%;
+      margin: 40px 0;
+      color: #fff;
+    }
+    .nav-style ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    .nav-style ul li a.active,
+    .nav-style ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+  
+}
+@media (max-width: 375px) {
+    .nav-style ul{
+      left:  -115%;
+    }
+}

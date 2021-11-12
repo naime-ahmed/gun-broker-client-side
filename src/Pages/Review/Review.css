@@ -1,0 +1,42 @@
+.rating-header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.rating-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rating-form  form{
+    background-color: rgb(176, 234, 252);
+    padding: 30px;
+    border-radius: 10px;
+}
+.rating-form  form input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid rgb(247, 65, 65);
+    border-radius: 5px;
+}
+.rating-form  form textarea{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgb(247, 65, 65);
+    border-radius: 5px;
+}
+.rating-btn {
+    border: none;
+    outline: none;
+    background-color: rgb(252, 53, 53);
+    color: white;
+    cursor: pointer;
+}

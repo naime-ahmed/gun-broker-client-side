@@ -1,0 +1,43 @@
+.top-banner {
+    margin: 0 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    place-items: center;
+    justify-content: center;
+    
+}
+
+.top-banner-text p {
+    text-align: justify;
+}
+.top-banner-text span {
+    color: rgb(199, 23, 23);
+}
+.top-banner-img img {
+    width: 100%;
+}
+
+/* responsive style  */
+@media only screen and (max-width: 800px) {
+    .top-banner-text h1 {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .top-banner{
+        grid-template-columns: 1fr;
+        
+        
+    }
+    .top-banner-text h1 {
+        margin-top: 20px;
+    }
+    .top-banner-text{
+        order: 2;
+    }
+    .top-banner-img{
+        order: 1;
+    }
+}

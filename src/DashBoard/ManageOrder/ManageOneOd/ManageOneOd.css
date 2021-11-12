@@ -1,0 +1,45 @@
+.oneOrder{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    justify-content: space-between;
+    background-color: rgb(161, 161, 248);
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    color: rgb(2, 2, 2);
+}
+.approved-btn{
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    background-color: rgb(3, 163, 3);
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.delete-btn{
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    background-color: rgb(204, 6, 22);
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* responsive style  */
+@media only screen and (max-width: 750px) {
+    .oneOrder{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
+}
+@media only screen and (max-width: 490px) {
+   
+    .oneOrder{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}

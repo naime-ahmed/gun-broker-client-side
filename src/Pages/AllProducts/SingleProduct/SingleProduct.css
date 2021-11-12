@@ -1,0 +1,25 @@
+.product{
+    border-radius: 5px;
+    box-shadow: rgba(44, 34, 37, 0.25) 0px 2px 5px -1px, rgba(56, 41, 41, 0.3) 0px 1px 3px -1px;
+    transition: all 0.3s;
+}
+.product:hover {
+    box-shadow: rgba(247, 51, 93, 0.1) 0px 4px 16px, rgba(250, 41, 146, 0.05) 0px 8px 32px;
+}
+.product-img {
+    padding: 20px;
+}
+.product-img img {
+    width: 100%;
+    
+}
+.product-text {
+    padding: 30px;
+}
+.product-text h3{
+    margin-top: 0;
+    color: rgb(218, 10, 27);
+}
+.product-text p{
+    text-align: justify;
+}

@@ -1,0 +1,22 @@
+.ds-Button {
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+.dSSignOut-btn {
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    color: rgb(255, 254, 254);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: rgb(248, 23, 23);
+}
