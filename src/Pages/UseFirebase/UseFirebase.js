@@ -50,7 +50,7 @@ const UseFirebase = () => {
                 const destination = location?.state?.from || '/';
                 history.replace(destination);
             })
-            .then(error => {
+            .catch(error => {
                 setAuthError(error?.message);
             })
             .finally(() => {

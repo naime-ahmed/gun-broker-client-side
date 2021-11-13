@@ -8,12 +8,12 @@ import Navigation from '../Shared/Navigation/Navigation';
 import './Login.css';
 
 const Login = () => {
-    const { register, handleSubmit, reset,  } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const location = useLocation();
     const history = useHistory()
 
-    const { loginUser } = UseAuth();
+    const { loginUser, authError } = UseAuth();
 
     const onSubmit = data => {
         loginUser(data.email, data.password, location, history);
@@ -28,9 +28,12 @@ const Login = () => {
                     <h1>Please Login</h1>
                 </div>
                 <div className="login-form">
+                    
                     <div className="main-form">
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            
+                        <div>
+                            {authError && "something is wrong!!"}
+                        </div>
                             <TextField {...register("email", { required: true })} label="email" variant="standard" placeholder="your email" type="email" /> <br /> <br />
                             
                             <TextField {...register("password", { required: true })} label="password" variant="standard" placeholder="your password" type="password" /> <br /> <br />
