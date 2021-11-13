@@ -1,0 +1,11 @@
+.welcome-dashboard{
+    
+}
+.welcome-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-img img{
+    width: 90%;
+}

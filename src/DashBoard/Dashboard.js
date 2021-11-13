@@ -26,6 +26,7 @@ import MakeAdmin from './MakeAdmin/MakeAdmin';
 import ManageOrder from './ManageOrder/ManageOrder';
 import Pay from './Pay/Pay';
 import UseAuth from '../Hooks/UseAuth';
+import WelcomeDs from './WelcomeDs/WelcomeDs';
 
 
 const drawerWidth = 240;
@@ -145,34 +146,36 @@ const Dashboard = (props) => {
         <Box
             component="main"
             sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
-        >
+          >
             <Toolbar />
-                <Switch>
-                    <Route exact path={`${path}/myOrder`}>
-                        <MyOrder/>    
-                    </Route>
-                    <Route exact path={`${path}`}>
-                        <MyOrder/>    
-                    </Route>
-                    <Route path={`${path}/review`}>
-                        <Review/>
-                    </Route>
-                    <Route path={`${path}/addProduct`}>
-                        <AddProduct/>
-                    </Route>
-                    <Route path={`${path}/manageProduct`}>
-                        <ManageProduct/>
-                    </Route>
-                    <Route path={`${path}/makeAdmin`}>
-                        <MakeAdmin/>
-                    </Route>
-                    <Route path={`${path}/manageOrder`}>
-                        <ManageOrder/>
-                    </Route>
-                    <Route path={`${path}/pay`}>
-                        <Pay/>
-                    </Route>
-                </Switch>
+              <Switch>
+                  <Route exact path={`${path}/myOrder`}>
+                      <MyOrder/>    
+                  </Route>
+                  <Route exact path={`${path}`}>
+                      <WelcomeDs/>   
+                  </Route>
+                  <Route path={`${path}/review`}>
+                      <Review/>
+                  </Route>
+                  <Route path={`${path}/addProduct`}>
+                      <AddProduct/>
+                  </Route>
+                  <Route path={`${path}/manageProduct`}>
+                      <ManageProduct/>
+                  </Route>
+                  <Route path={`${path}/makeAdmin`}>
+                      <MakeAdmin/>
+                  </Route>
+                  <Route path={`${path}/manageOrder`}>
+                      <ManageOrder/>
+                  </Route>
+                  <Route path={`${path}/pay`}>
+                      <Pay/>
+                  </Route>
+              </Switch>
+          
+              
         </Box>
     </Box>
     );

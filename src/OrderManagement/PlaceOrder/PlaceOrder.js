@@ -33,7 +33,7 @@ const PlaceOrder = () => {
                 if (result.insertedId) {
                     alert(' order successful')
                     reset();
-                    history.push('/myOrder')
+                    history.push('/dashboard')
                 }
             })
         
