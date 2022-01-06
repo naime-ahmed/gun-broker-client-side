@@ -9,7 +9,7 @@ const TopProduct = (props) => {
         history.push(`/placeOrder/${_id}`)
     }
     return (
-        <div className="top-product">
+        <div className="top-product" data-aos="flip-left" data-aos-duration="1000">
             <div className="top-product-img">
                 <img src={img} alt="" />
             </div>

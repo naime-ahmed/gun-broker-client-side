@@ -9,7 +9,7 @@ const SingleProduct = (props) => {
         history.push(`/placeOrder/${_id}`);
     }
     return (
-        <div className="product">
+        <div className="product" data-aos="flip-right" data-aos-duration="1000">
             <div className="product-img">
                 <img src={img} alt="" />
             </div>
